@@ -65,9 +65,8 @@ LinkedList.prototype.mergeSort = function (list) {
   let count = 0;
   let countList = list;
   let leftPart = list;
-  let leftPointer = list;
+  let pointer = list;
   let rightPart = null;
-  let rightPointer = null;
 
   // Counting the nodes in the received linkedlist 
   while (countList.next !== null) {
@@ -83,11 +82,11 @@ LinkedList.prototype.mergeSort = function (list) {
   // respect to mid node in tke linked list 
   while (count2 < mid) {
     count2++;
-    leftPointer = leftPointer.next;
+    pointer = pointer.next;
   }
 
-  rightPart = new LinkedList(leftPointer.next);
-  leftPointer.next = null;
+  rightPart = new LinkedList(pointer.next);
+  pointer.next = null;
 
   // Here are two linked list which 
   // contains the left most nodes and right 
@@ -126,7 +125,7 @@ LinkedList.prototype._mergeSort = function (left, right) {
       pointerLeft = pointerLeft.next;
     }
 
-    if (result.head == null) {
+    if (result.head === null) {
       result.head = new Node(tempNode);
       resultPointer = result.head;
     }
