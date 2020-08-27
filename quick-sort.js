@@ -1,4 +1,4 @@
-function quickSort(array, start = 0, end = array.length) {
+export default function quickSort(array, start = 0, end = array.length) {
   if (start >= end) {
     return array;
   }

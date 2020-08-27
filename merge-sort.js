@@ -1,4 +1,4 @@
-function mergeSort(array) {
+export default function mergeSort(array) {
   if (array.length <= 1) {
     return array;
   }
@@ -43,5 +43,6 @@ function main() {
 
   console.log(mergeSort(data));
 }
+
 
 main();
