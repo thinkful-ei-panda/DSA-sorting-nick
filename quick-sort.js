@@ -39,7 +39,12 @@ function main() {
     9, 73, 80, 98, 46, 27, 22, 87, 49, 83, 6, 39, 42, 51,
     54, 84, 34, 53, 78, 40, 14, 5];
 
-  console.log(quickSort(data));
+  const books = ['The House on Mango Street', 'The Picture of Dorian Gray', 'Never Let Me Go',
+    'The Road', 'Norwegian Wood', 'March: Book One', 'The Hobbit', 'Pride and Prejudice', 'A Tale of Two Cities',
+    'Crime and Punishment', 'We Should All Be Feminists', 'Persepolis', 'The Grapes of Wrath', 'Hamlet', 'Rebecca',
+    '1984', 'On the Road', 'Beloved', 'The Secret Life of Bees', 'This Side of Paradise',];
+
+  console.log(quickSort(books));
 }
 
 main();
